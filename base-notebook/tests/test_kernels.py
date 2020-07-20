@@ -11,7 +11,7 @@ LOGGER = logging.getLogger(__name__)
 KERNELS = ['java', 'julia', 'python', 'R']
 
 
-def test_kernels(container: Container, kernel: str) -> bool:
+def test_kernels(container: Container) -> bool:
     """Basic kernels test, loops through KERNELS list and test --version
     flag for each kernel"""
     for kernel in KERNELS:

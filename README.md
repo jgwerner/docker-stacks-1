@@ -32,9 +32,8 @@ docker run -p 8888:8888 illumidesk/base-notebook:latest
 
 - **Base Jupyter Notebook**: based on the [`jupyter/datascience-notebook`](https://github.com/jupyter/docker-stacks/tree/master/datascience-notebook) plus:
 
-  - Java kernel
+  - Java kernel using JRE based on Open JDK 11
   - Julia, Python, and R packages installed with files (install.jl, requirements.txt, environment.yml, respectively).
-  - nbgrader package (extensions disabled)
   - Jupyter Notebook configuration to support iFrames
 
 - **Learner Jupyter Notebook**: adds `nbgrader` extensions for the `learner` role.
