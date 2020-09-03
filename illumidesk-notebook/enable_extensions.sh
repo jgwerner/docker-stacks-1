@@ -1,9 +1,5 @@
 #!/bin/bash
 
-enable_julia_webio_extension() (
-    julia -e "using WebIO; WebIO.install_jupyter_nbextension()"
-)
-
 install_instructor_extensions() (
     jupyter serverextension enable --sys-prefix nbgrader.server_extensions.assignment_list
     jupyter serverextension enable --sys-prefix nbgrader.server_extensions.course_list
